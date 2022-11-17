@@ -4,14 +4,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import web.model.User;
-import web.service.User_Service;
+import web.service.UserService;
 
 @Controller
 
 public class UserController {
-    private final User_Service userService;
+    private final UserService userService;
 
-    public UserController(User_Service userService) {
+    public UserController(UserService userService) {
         this.userService = userService;
     }
 
